@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from "axios"
 import { useNavigate } from "react-router-dom"; //Sirve para redireccionar un login 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../Styles/Barra.css'
 import {Form, Button, Alert} from 'react-bootstrap'
 
 
@@ -33,6 +34,7 @@ console.log(input)
 console.log(response.data.IsAuth)
    }
      return (
+      <div class="Conteiner">
       <Form onSubmit={login}>
   <Form.Group controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
@@ -55,7 +57,9 @@ console.log(response.data.IsAuth)
   <Button variant="primary" type="submit">
     Submit
   </Button>
+  
 </Form>
+</div>
 
 
      )

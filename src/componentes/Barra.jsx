@@ -1,11 +1,12 @@
 
 import React from 'react'
-import { Form, FormControl, Nav, Navbar,Button } from 'react-bootstrap'
+import {   Nav, Navbar } from 'react-bootstrap'
 
  const Barra = () => {
   return (
     <>
     <header>
+      
     <Navbar bg="dark" variant="dark">
       <Navbar.Brand href="#home">Navbar</Navbar.Brand>
       <Nav className="mr-auto">
