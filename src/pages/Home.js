@@ -27,14 +27,23 @@ const onChange  = (evt) => setInput({
    const login = async (evt) => {
 
       evt.preventDefault()
-const response  = await axios.post('http://127.0.0.1:5500/user/login', input)
-if(!response.data.IsAuth === false) return alert(response.data.message)
-return navigate('/Board')
-console.log(input)
-console.log(response.data.IsAuth)
+      try{
+         const response  = await axios.post('http://127.0.0.1:5500/user/login', input)
+         if(!response.data.IsAuth === false) return alert(response.data.message)
+         return navigate('/Board')
+         console.log(input)
+         console.log(response.data.IsAuth)
+      }
+      catch(error)
+      {
+         alert('verifica tus credenciales')
+      }
+
    }
      return (
+      <div class='background'>
       <div class="Conteiner">
+         <h1> LOGIN </h1>
       <Form onSubmit={login}>
   <Form.Group controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
@@ -60,7 +69,7 @@ console.log(response.data.IsAuth)
   
 </Form>
 </div>
-
+</div>
 
      )
 }
