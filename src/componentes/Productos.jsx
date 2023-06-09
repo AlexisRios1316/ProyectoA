@@ -1,9 +1,15 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import  Teniis  from '../Assets/tenis.jpg'
 import  Teniis1  from '../Assets/tenis2.jpg'
 import  Teniis2  from '../Assets/tenis3.jpg'
 import '../Styles/productos.css'
+import {DataContext} from '../context/Dataprovider'
+
+
 const Productos = () => {
+    const value = useContext(DataContext)
+    const [productos] = value.productos
+
   return (
     <>
     <h1 className='tittle'> PRODUCTOS  </h1>    
