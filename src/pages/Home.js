@@ -43,24 +43,24 @@ const onChange  = (evt) => setInput({
      return (
       <div class='background'>
       <div class="Conteiner">
-         <h1> LOGIN </h1>
+         <h1 class='Texto' > LOGIN </h1>
       <Form onSubmit={login}>
   <Form.Group controlId="formBasicEmail">
-    <Form.Label>Email address</Form.Label>
+    <Form.Label class='Texto'>Email address</Form.Label>
     <Form.Control 
     type="email" placeholder="Enter email" 
-    name="users"
+    name="users" class='Texto'
     onChange={onChange} />
     
   </Form.Group>
 
   <Form.Group controlId="formBasicPassword">
-    <Form.Label>Password</Form.Label>
+    <Form.Label class='Texto'>Password</Form.Label>
     <Form.Control 
     type="password"
      placeholder="Password" 
      name="password"
-     onChange={onChange} />
+     onChange={onChange}  />
   </Form.Group>
   {/* Duda sobre boton y bootstrap*/}
   <Button variant="primary" type="submit">
