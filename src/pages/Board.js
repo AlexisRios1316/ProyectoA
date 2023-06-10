@@ -12,15 +12,17 @@ import {DataProvider} from '../context/Dataprovider';
 export const Board = () => {
     return (
        <>
-       <DataProvider>
+      
 
        <Barra/>
        <Carrucel/>
        <div className='Appcp'>
+       <DataProvider>
        <Cuadro/>
       <Productos/>
+      </DataProvider>
        </div>
-       </DataProvider>
+      
        </>
     )
 }
