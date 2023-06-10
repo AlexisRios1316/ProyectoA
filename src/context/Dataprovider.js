@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from "react";
-import Data from "../context/Data.js";
+
 
 export const DataContext = createContext();
 
@@ -8,7 +8,7 @@ export const DataProvider = (props) => {
 	
 
 	
-
+ /*
   useEffect(() => {
 		const producto = Data.items
 		if(producto){
@@ -19,14 +19,14 @@ export const DataProvider = (props) => {
 
 			
             setProductos([])
-		}, []);
-
+		}, []); 
 	const value = {
         productos : [productos]
-    }
+    }*/
+
 	
 	return (
-		<DataContext.Provider value={value}>
+		<DataContext.Provider >
 			{props.children}
 		</DataContext.Provider>
 	)

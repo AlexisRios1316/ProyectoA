@@ -12,7 +12,7 @@ import  Tenis  from '../Assets/tenis.jpg'
     <div className='producto'>
     < a href='#'     >  
 <div className="producto_img">
-<img className='img123' src={Tenis}  alt= {title}/>
+<img className='img123' src={image}  alt= {title}/>
 </div>
 </a>
 <div className='producto_footer'> 

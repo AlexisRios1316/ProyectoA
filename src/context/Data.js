@@ -1,5 +1,7 @@
-const data = {
-    status: "success",
+
+
+ export const data = {
+      status: "success",
     items: [
       {
         id: 1,
@@ -55,11 +57,11 @@ const data = {
         id: 6,
         title: "Tenis Air Jordan 1 Barbershop",
         price: 285,
-        image: require('../Assets/tenis5.jpg'),
+        image: require('../Assets/tenis6.jpg'),
         category: "nike",
         img1: "https://www.innvictus.com/medias/IN-DX5571-180-3.jpg?context=bWFzdGVyfGltYWdlc3wxMDM4NDJ8aW1hZ2UvanBlZ3xpbWFnZXMvaGIxL2hkNC8xMTc2NTgwNjEwNDYwNi5qcGd8M2Y4YzJjZDg1NzIxYzkxZTg1ZmM4NTM5N2Y4NmVhMzNiY2Q0MzZkYWI0YzJjNWY4NWUzOTRkZDEzNzJiY2E4Mw",
         img2: "https://www.innvictus.com/medias/IN-DX5571-180-5.jpg?context=bWFzdGVyfGltYWdlc3wxNzgzNDZ8aW1hZ2UvanBlZ3xpbWFnZXMvaDlmL2gyYi8xMTc2NTc4MTE2ODE1OC5qcGd8OGM2NDU0Mjg0ZDI4MTc2Mzc3MDgxYTQwODk5YzkxMThiNzQ1ZmY5MTlkYTJmNzhlMjQ4NjVmZGEwN2M5MWJjNA",
         cantidad: 1
       },
     ],
-  };
+  }
