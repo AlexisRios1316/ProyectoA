@@ -5,7 +5,7 @@ import Productos from '../componentes/Productos';
 import '../Styles/productos.css'
 import {BrowserRouter, Form, Route, Routes} from 'react-router-dom';
 import {DataProvider} from '../context/Dataprovider';
-
+import {Carrito} from '../Carrito/Carrito';
 
 
 // aCCESOS A LOS USUARIOS AUTENTICADOS 
@@ -18,6 +18,7 @@ export const Board = () => {
        <Carrucel/>
        <div className='Appcp'>
        <DataProvider>
+        <Carrito/>
        <Cuadro/>
       <Productos/>
       </DataProvider>

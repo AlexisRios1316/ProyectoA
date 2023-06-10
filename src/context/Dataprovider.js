@@ -1,4 +1,5 @@
 import React, { createContext, useState, useEffect } from "react";
+import { data } from "./Data";
 
 
 export const DataContext = createContext();
@@ -7,10 +8,10 @@ export const DataProvider = (props) => {
 	const [productos, setProductos] = useState([]);
 	
 
-	
- /*
+	/* ERRORES */
+ 
   useEffect(() => {
-		const producto = Data.items
+		const producto = data.items
 		if(producto){
             setProductos(producto)
         }else{
@@ -22,8 +23,8 @@ export const DataProvider = (props) => {
 		}, []); 
 	const value = {
         productos : [productos]
-    }*/
-
+    }
+/*  ERROES PARA RESOLVER */
 	
 	return (
 		<DataContext.Provider >
