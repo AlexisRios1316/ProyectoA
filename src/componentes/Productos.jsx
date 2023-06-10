@@ -15,7 +15,7 @@ console.log(productos)  */
     <h1 className='tittle'> PRODUCTOS  </h1>    
     <div className='Productos'>
        {
-        data.items.map((producto) => ( //Mapeando productos 
+        data.items.map((producto ) => ( //Mapeando productos 
             <ProductoItems 
             key={producto.id}
             id = {producto.id}
