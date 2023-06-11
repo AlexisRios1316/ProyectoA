@@ -1,28 +1,20 @@
-import React, {useContext} from 'react'
+import React from 'react'
 import Card from '../Assets/tenis3.jpg'
 import '../Styles/productos.css'
 import 'boxicons'
-import {DataContext} from '../context/Dataprovider'
-
 
 
 
  export const Carrito = () => {
-const value = useContext(DataContext)
-const [menu, setMenu] = value.menu;
 
 
-const tooglefalse = () => {
-  setMenu(false);
-}
 
-const show1 = menu ? "carritos show" : "carritos";
-const show2 =  menu ? "carrito show" : "carrito";
+
 
 
   return (
-<div className={show1}>  {/* Creando una iteracion para la parte del carrito y prudctos   */}
-    <div className={show2}>
+<div className="carritos show">  {/* Creando una iteracion para la parte del carrito y prudctos   */}
+    <div className="carrito show">
         <div className='carrito_close'>
 
         <box-icon name='x'> </box-icon>    
